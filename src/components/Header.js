@@ -10,11 +10,8 @@ const Header = () => {
 
   return (
     <header>
+      <img src={Logo} alt="Little Lemon Logo" />
       <nav className="desktop-nav">
-        <div>
-          <img src={Logo} alt="Little Lemon Logo" />
-        </div>
-
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
@@ -23,12 +20,10 @@ const Header = () => {
         <a href="#login">Login</a>
       </nav>
 
-      <div className="mobile">
-        <img src={Logo} alt="Little Lemon Logo" />
         <button className="menu-button" onClick={toggleMenu}>
           {menuOpen ? "✕" : "☰"}
         </button>
-      </div>
+
       {menuOpen && (
         <div className="mobile-menu">
           <a href="#home">Home</a>
