@@ -113,25 +113,25 @@ header {
 }
 
 .hero-text p {
-  font-family: var(--font-body);
   font-size: 18px;
-  color: var(--color-background);
   flex: 1 0 0;
+  color: var(--color-background);
+  font-family: var(--font-body);
 }
 
 .reserve-button,
 .order-button {
-  font-family: var(--font-body);
   font-size: 18px;
   font-weight: 700;
-  background-color: var(--color-secondary);
-  color: var(--color-text);
-  border: none;
   border-radius: 16px;
   padding: 10px 20px;
   margin-top: 10px;
+  border: none;
   cursor: pointer;
   transition: transform 1s;
+  font-family: var(--font-body);
+  background-color: var(--color-secondary);
+  color: var(--color-text);
 }
 
 .reserve-button:hover,
@@ -145,15 +145,17 @@ header {
 }
 
 .hero-image {
+  position: absolute;
+  object-fit: cover;
   width: 100%;
   max-width: 330px;
   height: 367px;
   border-radius: 20px;
-  position: absolute;
-  object-fit: cover;
   right: 261px;
   top: 160px;
 }
+
+/* Specials Section */
 
 .specials-section {
   display: flex;
@@ -166,8 +168,8 @@ header {
   grid-template-rows: auto auto;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   width: fit-content;
+  gap: 20px;
 }
 
 .specials-header {
@@ -178,15 +180,15 @@ header {
 }
 
 .specials-header h1 {
-  font-family: var(--font-display);
   font-size: 64px;
+  font-family: var(--font-display);
   color: var(--color-text);
 }
 
 .specials-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   column-width: 280px;
 }
@@ -195,8 +197,8 @@ header {
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
-  background-color: #ffffff;
   border-radius: 16px;
+  background-color: #ffffff;
 }
 
 .specials-item h2 {
@@ -207,17 +209,17 @@ header {
 
 .specials-item .price {
   font-family: "Karla", sans-serif;
+  font-weight: bold;
   font-size: 16px;
   color: var(--color-accent);
-  font-weight: bold;
 }
 
 .image-container img {
+  object-fit: cover;
   width: 100%;
   max-width: 300px;
   height: 200px;
   border-radius: 20px 20px 0 0;
-  object-fit: cover;
 }
 
 .title-food {
@@ -232,8 +234,8 @@ header {
   padding: 0 20px;
   font-family: "Karla", sans-serif;
   font-size: 16px;
-  color: var(--color-text);
   font-weight: 300;
+  color: var(--color-text);
 }
 
 .delivery-button {
@@ -241,13 +243,82 @@ header {
   border: none;
   cursor: pointer;
   display: grid;
-  padding: 20px;
-  width: 100%;
   grid-template-columns: auto auto;
   align-items: center;
   justify-content: space-between;
   font-family: "Karla", sans-serif;
+  padding: 20px;
+  width: 100%;
   font-size: 16px;
   color: var(--color-text);
   font-weight: 300;
 }
+
+/* Testimonials Section */
+
+.testimonials-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 30px 0;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.testimonials-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  gap: 50px;
+  flex: 1 0 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-colors, #495e57);
+}
+
+.testimonials-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  column-width: 280px;
+}
+
+.testimonials-list h1 {
+  grid-column: span 6;
+  text-align: center;
+  font-size: 64px;
+  line-height: 0.8;
+  font-family: var(--font-display);
+  color: var(--color-secondary);
+}
+
+/* Testimonials cards */
+
+.testimonial {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  border-radius: 16px;
+  padding: 20px;
+  background: var(--color-background);
+}
+
+.testimonial p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+.testimonial .author {
+  font-size: 18px;
+  font-family: var(--font-display);
+  color: var(--color-secondary);
+}
+
+/* About Section */
+
