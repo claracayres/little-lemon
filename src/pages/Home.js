@@ -85,13 +85,24 @@ const Home = () => {
                 quote="The food was amazing!"
                 author="Happy Customer"
               />
-              <TestimonialsCard
-                stars={3}
-                quote="The food was amazing!"
-                author="Happy Customer"
-              />
             </div>
           </div>
+        </section>
+
+        <section className="about-section">
+          <div className="about-header">
+            <h1>Little Lemon</h1>
+            <h2>Chicago</h2>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
         </section>
       </main>
     </>
